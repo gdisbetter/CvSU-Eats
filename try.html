@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CvSU Eats</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="try.css" />
+</head>
+<body>
+
+  <div class="app-container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="logo">Logo</div>
+      <div class="nav-item">
+        ⭐<br><span>Saved</span>
+      </div>
+      <div class="nav-item">
+        🕒<br><span>Recents</span>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+      <!-- Navbar -->
+      <div class="navbar">
+        <div class="navbar-title">CvSU Eats</div>
+        <div class="navbar-profile">
+          <button class="menu-btn">Menu</button>
+          <img src="https://via.placeholder.com/40" class="profile-pic" alt="Profile" />
+        </div>
+      </div>
+
+      <!-- Map and Details -->
+      <div id="map-container">
+        <div id="map"></div>
+        <div id="details-panel">
+          <div id="details-content"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="try.js"></script>
+</body>
+</html>
