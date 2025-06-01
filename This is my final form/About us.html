@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Navbar Only</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"  
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">  
+  <link rel="preconnect" href="https://fonts.gstatic.com"  crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Milky+Vintage&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="About us.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar-container">
+    <div class="navbar">
+      <div id="logo">
+        <a href="Home.html"> 
+          <img src="CVSUEATLOGOES.png" alt="CvSU Eat Logo" class="logo-image" />
+          <span class="logo-text">CvSU Eats</span>
+        </a>
+      </div>
+      <div class="menu-wrapper" onclick="toggleMenuDropdown()">
+        <span class="menu-text">Menu</span>
+        <img class="menu-icon" src="dropdownicon.png" alt="Icon">
+        <img class="menu-pfp" src="pfplol.png" alt="Profile">
+        <div class="dropdown-menu" id="dropdownMenu">
+          <a href="#" id="loginDropdownLink" onclick="openPopup()">Log in / Register</a> 
+          <a href="#">🗺️ Map</a>
+          <a href="#">📋 List view</a>
+          <a href="#" id="favouritesLink" style="display: none;">🌟 My favourites</a>
+          <a href="#">☎️ Contact us</a>
+          <a href="#" id="logoutDropdownLink" style="display: none;" onclick="logout()">🚪 Log out</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay for dim background -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Login Popup Modal -->
+  <div class="popup" id="popup"> 
+    <h1>Welcome!</h1>
+    <p>Login with your CVSU Account.</p>
+    <input type="number" placeholder="Student Number" required>
+    <br>
+    <input type="password" placeholder="Password" required>
+    <br>
+    <button type="submit" class="Enter" id="loginBtn">Log-in</button>
+    <button type="button" class="exit" onclick="closePopup()">X</button>
+  </div>
+
+  <!-- Banner with Logo Overlay -->
+  <div class="banner">
+    <img src="banner-image.jpg" alt="CvSU Eats Banner">
+    <div class="overlay"></div>
+    <div class="logo-overlay">
+      <img src="cvsu-eats-logo.png" alt="CvSU Eats Logo">
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="about-section fade-in">
+    <h2>About CvSU Eats</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris laoreet ipsum tellus, sit amet tempus libero sodales ornare. Ut diam erat, condimentum sed mauris et, fringilla rutrum elit. Maecenas tempus quam eget ante maximus faucibus quis sed risus. Aenean sollicitudin luctus justo fringilla imperdiet. Aliquam dignissim porttitor est non ultrices. Pellentesque scelerisque enim eu eleifend accumsan. Integer lacinia placerat tempus. Nam bibendum enim fringilla eros luctus congue. Aliquam at arcu lacinia tortor vestibulum aliquam eu eget odio. Sed eget aliquam nunc. Quisque quis risus sed purus accumsan mollis in vitae ex.
+    </p>
+  </div>
+
+  <!-- Mission Section -->
+  <div class="mission-section fade-in">
+    <div class="mission-content">
+      <h2>Our mission</h2>
+      <p>
+        At CvSU Eats, our mission is to provide students and faculty with a convenient, efficient, and enjoyable food experience across all Cavite State University campuses. Whether it's grabbing a quick bite between classes or exploring new flavors from local vendors, we aim to make every meal memorable.
+      </p>
+      <p>
+        With easy access to menus, reviews, and campus-specific food options, CvSU Eats connects you to the best food experiences tailored to your preferences — all within reach of your fingertips.
+      </p>
+    </div>
+    <div class="mission-image">
+      <img src="about2-image.png" alt="Mission Image">
+    </div>
+  </div>
+
+  <!-- Our Story Section -->
+  <div class="story-section fade-in">
+    <div class="story-image">
+      <img src="about1-image.png" alt="Our Story Image">
+    </div>
+    <div class="story-content">
+      <h2>Our story</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris laoreet ipsum tellus, sit amet tempus libero sodales ornare. Ut diam erat, condimentum sed mauris et, fringilla rutrum elit. Maecenas tempus quam eget ante maximus faucibus quis sed risus. Aenean sollicitudin luctus justo fringilla imperdiet. Aliquam dignissim porttitor est nec ultrices.
+      </p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- Social Icons (Top Right) -->
+    <div class="footer-socials">
+      <a href="https://instagram.com"  target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-instagram footer-icon"></i>
+      </a>
+      <a href="https://facebook.com"  target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-square-facebook footer-icon"></i>
+      </a>
+      <a href="https://youtube.com"  target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-square-youtube footer-icon"></i>
+      </a>
+    </div>
+    <!-- Centered Footer Content -->
+    <div class="footer-center">
+      <div class="footer-logo-section">
+        <img src="CVSUEATLOGOES.png" alt="CvSU Eats Logo" class="footer-logo-image" />
+        <span class="footer-title">CvSU Eats</span>
+      </div>
+      <div class="footer-copyright">
+        Copyright: © 2025 CvSU Eats. All rights reserved.
+      </div>
+      <div class="footer-links">
+        <a href="About us.html">About us</a>
+        <a href="#">Team</a>
+        <a href="#">Contact</a>
+        <a href="#">Super Secret Page</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Go to top">↑</button>
+
+  <!-- Script -->
+  <script src="About us.js"></script>
+</body>
+</html>

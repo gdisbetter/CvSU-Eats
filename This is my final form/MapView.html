@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Map View - CvSU Eats</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Fonts -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Milky+Vintage&family=Montserrat:wght@400;500&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Milky+Vintage&family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet">
+  </noscript>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="MapView.css" />
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div id="logo">
+      <a href="Home.html"> 
+        <img src="CVSUEATLOGOES.png" alt="CvSU Eat Logo" class="logo-image" />
+        <span class="logo-text">CvSU Eats</span>
+      </a>
+    </div>
+    <div class="menu-wrapper" onclick="toggleMenuDropdown()">
+      <span class="menu-text">Menu</span>
+      <img class="menu-icon" src="dropdownicon.png" alt="Icon">
+      <img class="menu-pfp" src="pfplol.png" alt="Profile">
+      <div class="dropdown-menu" id="dropdownMenu">
+        <a href="#" id="loginDropdownLink" onclick="openPopup()">Log in / Register</a> 
+        <a href="#">🗺️ Map</a>
+        <a href="#">📋 List view</a>
+        <a href="#" id="favouritesLink" style="display: none;">🌟 My favourites</a>
+        <a href="#">☎️ Contact us</a>
+        <a href="#" id="logoutDropdownLink" style="display: none;" onclick="logout()">🚪 Log out</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay for dimmed background -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Login Popup Modal -->
+  <div class="popup" id="popup"> 
+    <h1>Welcome!</h1>
+    <p>Login with your CVSU Account.</p>
+    <input type="number" placeholder="Student Number" required>
+    <br>
+    <input type="password" placeholder="Password" required>
+    <br>
+    <button type="submit" class="Enter" id="loginBtn">Log-in</button>
+    <button type="button" class="exit" onclick="closePopup()">X</button>
+  </div>
+
+  <!-- Map Container -->
+  <div id="map"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- Social Icons -->
+    <div class="footer-socials">
+      <a href="https://instagram.com"  target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-instagram footer-icon"></i>
+      </a>
+      <a href="https://facebook.com"  target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-square-facebook footer-icon"></i>
+      </a>
+      <a href="https://youtube.com"  target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-square-youtube footer-icon"></i>
+      </a>
+    </div>
+    <!-- Centered Footer Content -->
+    <div class="footer-center">
+      <div class="footer-logo-section">
+        <img src="CVSUEATLOGOES.png" alt="CvSU Eats Logo" class="footer-logo-image" />
+        <span class="footer-title">CvSU Eats</span>
+      </div>
+      <div class="footer-copyright">
+        Copyright: © 2025 CvSU Eats. All rights reserved.
+      </div>
+      <div class="footer-links">
+        <a href="About us.html">About us</a>
+        <a href="#">Team</a>
+        <a href="#">Contact</a>
+        <a href="#">Super Secret Page</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="scrollTopBtn" title="Go to top">↑</button>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script> 
+
+  <!-- JavaScript -->
+  <script src="MapView.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Milky+Vintage&family=Montserrat:wght@400;500&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Milky+Vintage&family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet">
+  </noscript>
+  <link rel="stylesheet" href="Home.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div id="logo">
+      <a href="#">   
+        <img src="CVSUEATLOGOES.png" alt="CvSU Eat Logo" class="logo-image" />
+        <span class="logo-text">CvSU Eats</span>
+      </a>
+    </div>
+    <div class="menu-wrapper" onclick="toggleMenuDropdown()">
+      <span class="menu-text">Menu </span>
+      <img class="menu-icon" src="dropdownicon.png" alt="Icon">
+      <img class="menu-pfp" src="pfplol.png" alt="Profile">
+      <div class="dropdown-menu" id="dropdownMenu">
+        <a href="#" id="loginDropdownLink" onclick="openPopup()">Log in / Register</a>
+        <a href="MapView.html">🗺️ Map</a>
+        <a href="#">📋 List view</a>
+        <a href="#" id="favouritesLink" style="display: none;">🌟 My favourites</a>
+        <a href="Contact.html">☎️ Contact us</a>
+        <a href="#" id="logoutDropdownLink" style="display: none;" onclick="logout()">🚪 Log out</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup moved outside of dropdown -->
+  <div class="popup" id="popup"> 
+    <h1>Welcome!</h1>
+    <p>Login with your CVSU Account.</p>
+    <input type="number" placeholder="Student Number" required>
+    <br>
+    <input type="password" placeholder="Password" required>
+    <br>
+    <button type="submit" class="Enter" id="loginBtn">Log-in</button>
+    <button type="button" class="exit" onclick="closePopup()">X</button>
+  </div>
+
+    <div class="overlay" id="overlay"></div>
+  <!-- Yellow Divider -->
+  <div id="yellow"></div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="background"></div>
+    <h1>Welcome to CvSU eats!</h1>
+    <h3 class="subheading">Discover the best food spots around campus.</h3>
+    <div class="buttons">
+      <a href="MapView.html" class="map-button">Interactive map</a>
+      <a href="MapView.html" class="list-button">List view</a>
+    </div>
+  </section>
+
+  <!-- Top Rated Section -->
+  <section class="top-rated">
+    <h2>Top rated eateries</h2>
+    <div class="cards">
+      <!-- Card 1 -->
+      <a href="ar-diners.html" class="card-link">
+        <div class="card">
+          <img src="ARdiners.jpg" alt="Sir STS Tapsilog" />
+          <div class="info">
+            <p class="rating">★ 4.8</p>
+            <p class="delivery">⏱️ 12-15 Minutes</p>
+            <h3>AR DINERS</h3>
+            <p class="price">₱100 - ₱200</p>
+          </div>
+        </div>
+      </a>
+      <!-- Card 2 -->
+      <a href="tres-kusineros.html" class="card-link">
+        <div class="card">
+          <img src="KUSINEROS.jpg" alt="TRES KUSINEROS" />
+          <div class="info">
+            <p class="rating">★ 5.0</p>
+            <p class="delivery">⏱️ 3-7 Minutes</p>
+            <h3>KUSINEROS</h3>
+            <p class="price">₱60 - ₱100</p>
+          </div>
+        </div>
+      </a>
+      <!-- Card 3 -->
+      <a href="verses.html" class="card-link">
+        <div class="card">
+          <img src="VERSES.jpg" alt="VERSES" />
+          <div class="info">
+            <p class="rating">★ 4.9</p>
+            <p class="delivery">⏱️ 5-10 Minutes</p>
+            <h3>VERSES</h3>
+            <p class="price">₱60 - ₱150</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Other Sections -->
+  <div class="h2">
+    <h1><em>You prepare the food and products, we handle the rest.</em></h1>
+  </div>
+  <img class="banner-img" src="bgblurcvsu.png" alt="CvSU Campus Aerial" />
+  <div class="main-content">
+    <div class="main-card">
+      <h2>Made by CvSU students, for<br>CvSU students.</h2>
+      <p>Eatery Locator is a website designed by Cavite State University (CvSU) students, for CvSU students, to help easily find food spots around campus. Whether you're craving a quick snack or a full meal, our platform provides up-to-date information on nearby eateries, including menus, prices, and locations. With student-friendly features and recommendations, it’s your go-to guide for satisfying campus cravings.</p>
+      <button class="login-btn" onclick="openPopup()">Log-in and get started</button>
+    </div>
+  </div>
+  <div class="h1">
+    <h1><em>I don't prepare the food products, you don't handle anything.</em></h1>
+  </div>
+  <img class="second-banner-img" src="bgblurcvsu.png" alt="CvSU Campus Aerial" />
+  <div class="second-main-content">
+    <div class="second-main-card">
+      <h2>What is our website about?</h2>
+      <p>We are a team of dedicated Cavite State University students who created Eatery Locator to make campus life more convenient and delicious. As fellow students, we understand the struggle of finding affordable and accessible food options between classes. Our mission is to connect the CvSU community with the best local eateries around campus through a simple, user-friendly platform. Eatery Locator is built with student needs in mind — by students, for students.</p>
+      <button class="about-btn">About us</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- Social Icons (Top Right) -->
+    <div class="footer-socials">
+      <a href="https://instagram.com"  target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-instagram footer-icon"></i>
+      </a>
+      <a href="https://facebook.com"  target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-square-facebook footer-icon"></i>
+      </a>
+      <a href="https://youtube.com"  target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-square-youtube footer-icon"></i>
+      </a>
+    </div>
+    <!-- Centered Footer Content -->
+    <div class="footer-center">
+      <div class="footer-logo-section">
+        <img src="CVSUEATLOGOES.png" alt="CvSU Eats Logo" class="footer-logo-image" />
+        <span class="footer-title">CvSU Eats</span>
+      </div>
+      <div class="footer-copyright">
+        Copyright: © 2025 CvSU Eats. All rights reserved.
+      </div>
+      <div class="footer-links">
+        <a href="About us.html">About us</a>
+        <a href="Contact.html">Team</a>
+        <a href="Contact.html">Contact</a>
+        <a href="#">Super Secret Page</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn" title="Go to top">↑</button>
+
+  <script src="Home.js"></script>
+</body>
+</html>
