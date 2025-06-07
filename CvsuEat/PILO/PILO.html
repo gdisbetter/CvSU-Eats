@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PILO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <style>
+    body {
+      font-family: "Georgia", serif;
+    }
+
+    .scrollbar-thin::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .scrollbar-thin::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .scrollbar-thin::-webkit-scrollbar-thumb {
+      background-color: #4b5563;
+      border-radius: 10px;
+      border: 2px solid transparent;
+      background-clip: content-box;
+    }
+
+    .hover-effect:hover {
+      box-shadow: 0 0 10px #2D4739;
+      border-color: #2D4739;
+    }
+  </style>
+
+</head>
+<body class="bg-white flex justify-center items-center min-h-screen p-4">
+  <div
+    class="max-w-4xl w-full bg-[#fef7e7] rounded-lg border border-gray-300 shadow-md p-6 flex flex-col scrollbar-thin overflow-y-auto max-h-[90vh]">
+
+    <div class="flex flex-wrap justify-between items-start mb-4">
+      <h1 class="text-4xl font-extrabold text-black leading-tight" style="font-family: Georgia, serif;">PILO</h1>
+      <div class="flex space-x-6 text-sm text-[#4b4b4b] items-center select-none">
+        <div class="flex items-center space-x-1">
+          <i class="fas fa-wallet text-[#e6d1a0] text-lg"></i>
+          <span>₱ 75 - ₱ 268</span>
+        </div>
+        <div class="flex items-center space-x-1 border-l border-[#d9cfae] pl-4">
+          <i class="far fa-clock text-[#e6d1a0] text-lg"></i>
+          <span>5 Min.</span>
+        </div>
+        <div class="flex items-center space-x-1 border-l border-[#d9cfae] pl-4">
+          <i class="far fa-star text-[#e6d1a0] text-lg"></i>
+          <span>5.0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex max-md:flex-wrap max-md:justify-center justify-between gap-4 mb-6">
+      <div class="w-3/4">
+        <img src="Pilo.jpg" class="rounded-md border border-[#2a3a3a] w-full object-contain">
+      </div>
+
+      <div
+        class="flex md:mx-auto flex-col justify-between border border-[#d9cfae] rounded-md p-4 md:max-w-[220px] md:w-1/4 min-h-[180px]">
+        <div class="space-y-3 text-sm text-[#4b4b4b] leading-relaxed">
+          <p><i class="fas fa-map-marker-alt text-[#d43c3c]"></i><span class="ml-1">Location: Purok 1 Bancod , Indang, Cavite</span></p>
+          <p><i class="far fa-clock"></i><span class="ml-1">Open: 8:00 AM - 9:00 PM</span></p>
+          <p><i class="fas fa-phone-alt"></i><span class="ml-1">Contact: 0965 116 8562</span></p>
+        </div>
+        <div class="flex justify-end">
+          <i class="far fa-star text-[#d9c3a0] text-3xl"></i>
+        </div>
+      </div>
+    </div>
+
+    <p class="italic text-xl text-black/80 mb-4" style="font-family: Georgia, serif;">Featured items</p>
+
+    <div class="grid gap-4 grid-cols-1 sm:grid-cols-2">
+
+      <div
+        class="hover-effect flex justify-between items-center bg-[#FCF6E9] border border-[#E6DCC9] rounded-lg p-4 cursor-pointer transition-shadow duration-300">
+        <div class="pr-4">
+          <h2 class="font-extrabold text-xl mb-1">Tapa-Longganisa-Silog</h2>
+          <p class="text-sm mb-1">₱ 169</p>
+          <p class="text-xs text-[#BDB6A9] leading-snug max-w-[180px]">Garlic Rice, Tapa, Longganisa, and Sunny Side-up Egg with 2 Slices of Tomatoes on the Side</p>
+        </div>
+        <img src="TAPALONG.jpg" alt="Kimchi Fried Rice" class="w-[100px] h-[100px] rounded-lg object-cover" />
+      </div>
+
+      <div
+        class="hover-effect flex justify-between items-center bg-[#FCF6E9] border border-[#E6DCC9] rounded-lg p-4 cursor-pointer transition-shadow duration-300">
+        <div class="pr-4">
+          <h2 class="font-extrabold text-xl mb-1">Tapsilog</h2>
+          <p class="text-sm mb-1">₱ 129</p>
+          <p class="text-xs text-[#BDB6A9] leading-snug max-w-[180px]">Garlic Rice, Tapa, and Sunny Side-up with a Piece of Tomato on the side</p>
+        </div>
+        <img src="TAPSILOG.jpg" alt="Chicken Wings" class="w-[100px] h-[100px] rounded-lg object-cover" />
+      </div>
+
+      <div
+        class="hover-effect flex justify-between items-center bg-[#FCF6E9] border border-[#E6DCC9] rounded-lg p-4 cursor-pointer transition-shadow duration-300">
+        <div class="pr-4">
+          <h2 class="font-extrabold text-xl mb-1">Nachos</h2>
+          <p class="text-sm mb-1">₱ 158</p>
+          <p class="text-xs text-[#BDB6A9] leading-snug max-w-[180px]">Nacho Chips with Meat and Veggiess, Topped with Cheese</p>
+        </div>
+        <img src="Nachos.jpg" alt="Panini" class="w-[100px] h-[100px] rounded-lg object-cover" />
+      </div>
+
+      <div
+        class="hover-effect flex justify-between items-center bg-[#FCF6E9] border border-[#E6DCC9] rounded-lg p-4 cursor-pointer transition-shadow duration-300">
+        <div class="pr-4">
+          <h2 class="font-extrabold text-xl mb-1">Korean Buffalo Wings</h2>
+          <p class="text-sm mb-1">₱ 179</p>
+          <p class="text-xs text-[#BDB6A9] leading-snug max-w-[180px]">Buffalo Wings that are thickly Coated in Spicy Korean Sauce</p>
+        </div>
+        <img src="BuffaloWings.jpg" alt="Chicken Leg Quarter"
+          class="w-[100px] h-[100px] rounded-lg object-cover" />
+     
+      </div>
+    </div>
+   </div>
+  </div>
+</body>
+</html>

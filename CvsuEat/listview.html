@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List View</title>
+    <link rel="stylesheet" href="listview.css">
+</head>
+<body>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lato :wght@400;700&family=Milky+Vintage&family=Montserrat:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Lato :wght@400;700&family=Milky+Vintage&family=Montserrat:wght@400;500&display=swap" rel="stylesheet"></noscript>
+
+ 
+  <link rel="stylesheet" href="lisview.css" />
+</head>
+<body background="WatermarkBG.png">
+
+
+  <div class="navbar">
+    <div id="logo">
+      <a href="#">
+        <img src="CVSUEATLOGOES.png" alt="CvSU Eat Logo" class="logo-image" />
+        <span class="logo-text">CvSU Eats</span>
+      </a>
+    </div>
+    <div class="menu-wrapper" onclick="toggleMenuDropdown()">
+      <span class="menu-text">Menu</span>
+      <img class="menu-icon" src="dropdownicon.png" alt="Icon">
+      <img class="menu-pfp" src="pfplol.png" alt="Profile">
+      <div class="dropdown-menu" id="dropdownMenu">
+        <a href="#">Log in / Register</a>
+        <a href="#">🗺️ Map</a>
+        <a href="listview.html">📋 List view</a>
+        <a href="#">🌟 My favourites</a>
+        <a href="#">☎️ Contact us</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="yellow"></div>
+
+    <h1 id="LV">List View</h1>
+
+  <div class="column">
+    <!-- ARDiners -->
+    <div class="boxes">
+        <div class="resto"><img src="ARDiners.jpg" alt=""></div>
+        <div class="resto-pic"><img src="ARDinersLogo.jpg" alt=""></div>
+        <div class="info">
+          <h2>AR Diners</h2>
+          <div class="details">
+
+            <div id="left">
+          <p>⭐ 4.8</p>
+          <p>🪙 ₱150</p></div>
+
+            <div id="right">
+          <p>⏱️ 12-15 Min.</p>
+          <p>🍗 Rice Meals</p></div>
+          </div>
+
+          <div class="viewmore">
+            <button type="submit" class="VMutton" onclick="openPopup()">View More</button>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Kokok's -->
+    <div class="boxes">
+        <div class="resto"><img src="Kokoks.jpg" alt=""></div>
+        <div class="resto-pic"><img src="KokoksLogo.jpg" alt=""></div>
+        <div class="info">
+          <h2>Kokok's</h2>
+          <div class="details">
+
+            <div id="left">
+          <p>⭐ 4.8</p>
+          <p>🪙 ₱150</p></div>
+
+            <div id="right">
+          <p>⏱️ 12-15 Min.</p>
+          <p>🍗 Rice Meals</p></div>
+          </div>
+
+          <div class="viewmore">
+            <button type="submit" class="VMutton" onclick="openPopup()">View More</button>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Tres Kusineros -->
+      <div class="boxes">
+        <div class="resto"><img src="TresKusineros.jpg" alt=""></div>
+        <div class="resto-pic"><img src="TresKusinerosLogo.jpg" alt=""></div>
+        <div class="info">
+          <h2>Tres Kusineros</h2>
+          <div class="details">
+
+            <div id="left">
+          <p>⭐ 4.8</p>
+          <p>🪙 ₱150</p></div>
+
+            <div id="right">
+          <p>⏱️ 12-15 Min.</p>
+          <p>🍗 Rice Meals</p></div>
+          </div>
+
+          <div class="viewmore">
+            <button type="submit" class="VMutton" onclick="openPopup()">View More</button>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Verses -->
+      <div class="boxes">
+        <div class="resto"><img src="Verses.jpg" alt=""></div>
+        <div class="resto-pic"><img src="VersesLogo.jpg" alt=""></div>
+        <div class="info">
+          <h2>Verses</h2>
+          <div class="details">
+
+            <div id="left">
+          <p>⭐ 4.8</p>
+          <p>🪙 ₱150</p></div>
+
+            <div id="right">
+          <p>⏱️ 12-15 Min.</p>
+          <p>🍗 Rice Meals</p></div>
+          </div>
+
+          <div class="viewmore">
+            <button type="submit" class="VMutton" onclick="openPopup()">View More</button>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Lala Fe's -->
+      <div class="boxes">
+        <div class="resto"><img src="Lalafes.jpg" alt=""></div>
+        <div class="resto-pic"><img src="LalafesLogo.jpg" alt=""></div>
+        <div class="info">
+          <h2>Lala Fe's</h2>
+          <div class="details">
+
+            <div id="left">
+          <p>⭐ 4.8</p>
+          <p>🪙 ₱150</p></div>
+
+            <div id="right">
+          <p>⏱️ 12-15 Min.</p>
+          <p>🍗 Rice Meals</p></div>
+          </div>
+
+          <div class="viewmore">
+            <button type="submit" class="VMutton" onclick="openPopup()">View More</button>
+            
+          </div>
+        </div>
+      </div>
+      <!-- PILO -->
+      <div class="boxes">
+        <div class="resto"><img src="Pilo.jpg" alt=""></div>
+        <div class="resto-pic"><img src="PILOLOGO.jpg" alt=""></div>
+        <div class="info">
+          <h2>PILO</h2>
+          <div class="details">
+
+            <div id="left">
+          <p>⭐ 4.8</p>
+          <p>🪙 ₱150</p></div>
+
+            <div id="right">
+          <p>⏱️ 12-15 Min.</p>
+          <p>🍗 Rice Meals</p></div>
+          </div>
+
+          <div class="viewmore">
+            <button type="submit" class="VMutton" onclick="openPopup()">View More</button>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Mama Marie's -->
+      <div class="boxes">
+        <div class="resto"><img src="MamaMaries.jpg" alt=""></div>
+        <div class="resto-pic"><img src="MamaMaries.jpg" alt=""></div>
+        <div class="info">
+          <h2>Mama Marie's</h2>
+          <div class="details">
+
+            <div id="left">
+          <p>⭐ 4.8</p>
+          <p>🪙 ₱150</p></div>
+
+            <div id="right">
+          <p>⏱️ 12-15 Min.</p>
+          <p>🍗 Rice Meals</p></div>
+          </div>
+
+          <div class="viewmore">
+            <button type="submit" class="VMutton" onclick="openPopup()">View More</button>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Lola V -->
+      <div class="boxes">
+        <div class="resto"><img src="LolaV.jpg" alt=""></div>
+        <div class="resto-pic"><img src="LolaVLOGO.jpg" alt=""></div>
+        <div class="info">
+          <h2>LolaV's Eatery</h2>
+          <div class="details">
+
+            <div id="left">
+          <p>⭐ 4.8</p>
+          <p>🪙 ₱150</p></div>
+
+            <div id="right">
+          <p>⏱️ 12-15 Min.</p>
+          <p>🍗 Rice Meals</p></div>
+          </div>
+
+          <div class="viewmore">
+            <button type="submit" class="VMutton" onclick="openPopup()">View More</button>
+            
+          </div>
+        </div>
+      </div>
+      <!-- MCD -->
+      <div class="boxes">
+        <div class="resto"><img src="MCD.jpg" alt=""></div>
+        <div class="resto-pic"><img src="MCDLOGO.jpg" alt=""></div>
+        <div class="info">
+          <h2>MCD Eatery</h2>
+          <div class="details">
+
+            <div id="left">
+          <p>⭐ 4.8</p>
+          <p>🪙 ₱150</p></div>
+
+            <div id="right">
+          <p>⏱️ 12-15 Min.</p>
+          <p>🍗 Rice Meals</p></div>
+          </div>
+
+          <div class="viewmore">
+            <button type="submit" class="VMutton" onclick="openPopup()">View More</button>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Olivia -->
+      <div class="boxes">
+        <div class="resto"><img src="Olivia.jpg" alt=""></div>
+        <div class="resto-pic"><img src="OliviaLOGO.png" alt=""></div>
+        <div class="info">
+          <h2>Olivia's Kitchen</h2>
+          <div class="details">
+
+            <div id="left">
+          <p>⭐ 4.8</p>
+          <p>🪙 ₱150</p></div>
+
+            <div id="right">
+          <p>⏱️ 12-15 Min.</p>
+          <p>🍗 Rice Meals</p></div>
+          </div>
+
+          <div class="viewmore">
+            <button type="submit" class="VMutton" onclick="openPopup()">View More</button>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Kthess -->
+      <div class="boxes">
+        <div class="resto"><img src="Kthess.jpg" alt=""></div>
+        <div class="resto-pic"><img src="KthessLOGO.jpg" alt=""></div>
+        <div class="info">
+          <h2>K-Thess Toue</h2>
+          <div class="details">
+
+            <div id="left">
+          <p>⭐ 4.8</p>
+          <p>🪙 ₱150</p></div>
+
+            <div id="right">
+          <p>⏱️ 12-15 Min.</p>
+          <p>🍗 Rice Meals</p></div>
+          </div>
+
+          <div class="viewmore">
+            <button type="submit" class="VMutton" onclick="openPopup()">View More</button>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Kcafe -->
+      <div class="boxes">
+        <div class="resto"><img src="Kcafe.jpg" alt=""></div>
+        <div class="resto-pic"><img src="Kcafelogo.jpg" alt=""></div>
+        <div class="info">
+          <h2>K. Cafe</h2>
+          <div class="details">
+
+            <div id="left">
+          <p>⭐ 4.8</p>
+          <p>🪙 ₱150</p></div>
+
+            <div id="right">
+          <p>⏱️ 12-15 Min.</p>
+          <p>🍗 Rice Meals</p></div>
+          </div>
+
+          <div class="viewmore">
+            <button type="submit" class="VMutton" onclick="openPopup()">View More</button>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Minana -->
+      <div class="boxes">
+        <div class="resto"><img src="Minana.jpg" alt=""></div>
+        <div class="resto-pic"><img src="MinanaLogo.jpg" alt=""></div>
+        <div class="info">
+          <h2>Minana</h2>
+          <div class="details">
+
+            <div id="left">
+          <p>⭐ 4.8</p>
+          <p>🪙 ₱150</p></div>
+
+            <div id="right">
+          <p>⏱️ 12-15 Min.</p>
+          <p>🍗 Rice Meals</p></div>
+          </div>
+
+          <div class="viewmore">
+            <button type="submit" class="VMutton" onclick="openPopup()">View More</button>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Puhon -->
+      <div class="boxes">
+        <div class="resto"><img src="Puhon.jpg" alt=""></div>
+        <div class="resto-pic"><img src="PuhonLOGO.jpg" alt=""></div>
+        <div class="info">
+          <h2>PUHON</h2>
+          <div class="details">
+
+            <div id="left">
+          <p>⭐ 4.8</p>
+          <p>🪙 ₱150</p></div>
+
+            <div id="right">
+          <p>⏱️ 12-15 Min.</p>
+          <p>🍗 Rice Meals</p></div>
+          </div>
+
+          <div class="viewmore">
+            <button type="submit" class="VMutton" onclick="openPopup()">View More</button>
+            
+          </div>
+        </div>
+      </div>
+      <!-- ButFirst -->
+      <div class="boxes">
+        <div class="resto"><img src="Butfirst.jpg" alt=""></div>
+        <div class="resto-pic"><img src="ButfirstLogo.jpg" alt=""></div>
+        <div class="info">
+          <h2>But First, Coffee</h2>
+          <div class="details">
+
+            <div id="left">
+          <p>⭐ 4.8</p>
+          <p>🪙 ₱150</p></div>
+
+            <div id="right">
+          <p>⏱️ 12-15 Min.</p>
+          <p>🍗 Rice Meals</p></div>
+          </div>
+
+          <div class="viewmore">
+            <button type="submit" class="VMutton" onclick="openPopup()">View More</button>
+            
+          </div>
+        </div>
+      </div>
+      <!-- BARI -->
+      <div class="boxes">
+        <div class="resto"><img src="BARI.jpg" alt=""></div>
+        <div class="resto-pic"><img src="BARILOGO.jpg" alt=""></div>
+        <div class="info">
+          <h2>Bari Cafe</h2>
+          <div class="details">
+
+            <div id="left">
+          <p>⭐ 4.8</p>
+          <p>🪙 ₱150</p></div>
+
+            <div id="right">
+          <p>⏱️ 12-15 Min.</p>
+          <p>🍗 Rice Meals</p></div>
+          </div>
+
+          <div class="viewmore">
+            <button type="submit" class="VMutton" onclick="openPopup()">View More</button>
+            
+          </div>
+        </div>
+      </div>
+
+
+
+  </div>
+
+  <div class="boxup" id="boxup">
+              <h1>SIR STS TAPSILOG</h1>
+              
+              <img src="CVSUEATLOGOES.png" alt="">
+              <div class="boxinfo">
+                <p># Location: CVSU Main, 2nd Floor, Building A</p>
+                <br>
+                <p># Open: 8:00 AM - 9:00 PM</p>
+                <br>
+                <p># Contact: 0912-345-6789</p>
+              </div>
+              <h2><i>Featured Items</i></h2>
+
+              <button type="submit" class="exit" onclick="closePopup()">X</button>
+            </div>
+  <script src="listview.js"></script>
+</body>
+</html>
