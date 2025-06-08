@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>K Cafe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <style>
+    body {
+      font-family: "Georgia", serif;
+    }
+
+    .scrollbar-thin::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .scrollbar-thin::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .scrollbar-thin::-webkit-scrollbar-thumb {
+      background-color: #4b5563;
+      border-radius: 10px;
+      border: 2px solid transparent;
+      background-clip: content-box;
+    }
+
+    .hover-effect:hover {
+      box-shadow: 0 0 10px #2D4739;
+      border-color: #2D4739;
+    }
+  </style>
+
+</head>
+<body class="bg-white flex justify-center items-center min-h-screen p-4">
+  <div
+    class="max-w-4xl w-full bg-[#fef7e7] rounded-lg border border-gray-300 shadow-md p-6 flex flex-col scrollbar-thin overflow-y-auto max-h-[90vh]">
+
+    <div class="flex flex-wrap justify-between items-start mb-4">
+      <h1 class="text-4xl font-extrabold text-black leading-tight" style="font-family: Georgia, serif;">K. Cafe</h1>
+      <div class="flex space-x-6 text-sm text-[#4b4b4b] items-center select-none">
+        <div class="flex items-center space-x-1">
+          <i class="fas fa-wallet text-[#e6d1a0] text-lg"></i>
+          <span>₱ 25 - ₱ 65</span>
+        </div>
+        <div class="flex items-center space-x-1 border-l border-[#d9cfae] pl-4">
+          <i class="far fa-clock text-[#e6d1a0] text-lg"></i>
+          <span>4 Min.</span>
+        </div>
+        <div class="flex items-center space-x-1 border-l border-[#d9cfae] pl-4">
+          <i class="far fa-star text-[#e6d1a0] text-lg"></i>
+          <span>5.0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex max-md:flex-wrap max-md:justify-center justify-between gap-4 mb-6">
+      <div class="w-3/4">
+        <img src="KCafe.jpg" class="rounded-md border border-[#2a3a3a] w-full object-contain">
+      </div>
+
+      <div
+        class="flex md:mx-auto flex-col justify-between border border-[#d9cfae] rounded-md p-4 md:max-w-[220px] md:w-1/4 min-h-[180px]">
+        <div class="space-y-3 text-sm text-[#4b4b4b] leading-relaxed">
+          <p><i class="fas fa-map-marker-alt text-[#d43c3c]"></i><span class="ml-1">Location: 6V2H+5QJ, De Ocampo, Indang, Cavite </span></p>
+          <p><i class="far fa-clock"></i><span class="ml-1">Open: 10:00 AM - 8:00 PM</span></p>
+          <p><i class="fas fa-phone-alt"></i><span class="ml-1">Contact: 0906 322 9213</span></p>
+        </div>
+        <div class="flex justify-end">
+          <i class="far fa-star text-[#d9c3a0] text-3xl"></i>
+        </div>
+      </div>
+    </div>
+
+    <p class="italic text-xl text-black/80 mb-4" style="font-family: Georgia, serif;">Featured items</p>
+
+    <div class="grid gap-4 grid-cols-1 sm:grid-cols-2">
+
+      <div
+        class="hover-effect flex justify-between items-center bg-[#FCF6E9] border border-[#E6DCC9] rounded-lg p-4 cursor-pointer transition-shadow duration-300">
+        <div class="pr-4">
+          <h2 class="font-extrabold text-xl mb-1">Flavored Fries</h2>
+          <p class="text-sm mb-1">₱ 45</p>
+          <p class="text-xs text-[#BDB6A9] leading-snug max-w-[180px]">Fries Coated in Deliciousness</p>
+        </div>
+        <img src="FRIES.jpg" alt="Kimchi Fried Rice" class="w-[100px] h-[100px] rounded-lg object-cover" />
+      </div>
+
+      <div
+        class="hover-effect flex justify-between items-center bg-[#FCF6E9] border border-[#E6DCC9] rounded-lg p-4 cursor-pointer transition-shadow duration-300">
+        <div class="pr-4">
+          <h2 class="font-extrabold text-xl mb-1">Burger</h2>
+          <p class="text-sm mb-1">₱ 45 - 65</p>
+          <p class="text-xs text-[#BDB6A9] leading-snug max-w-[180px]">Burger with Meat Patty, Lettuce, Cucumber, and Cheese</p>
+        </div>
+        <img src="BORGOR.jpg" alt="Chicken Wings" class="w-[100px] h-[100px] rounded-lg object-cover" />
+      </div>
+
+      <div
+        class="hover-effect flex justify-between items-center bg-[#FCF6E9] border border-[#E6DCC9] rounded-lg p-4 cursor-pointer transition-shadow duration-300">
+        <div class="pr-4">
+          <h2 class="font-extrabold text-xl mb-1">Cheesy Hotdog Sandwich</h2>
+          <p class="text-sm mb-1">₱ 40</p>
+          <p class="text-xs text-[#BDB6A9] leading-snug max-w-[180px]">Hotdog Sandwich with Lettuce, Cucumber, and Cheese</p>
+        </div>
+        <img src="HAWTDAWG.jpg" alt="Panini" class="w-[100px] h-[100px] rounded-lg object-cover" />
+      </div>
+
+      <div
+        class="hover-effect flex justify-between items-center bg-[#FCF6E9] border border-[#E6DCC9] rounded-lg p-4 cursor-pointer transition-shadow duration-300">
+        <div class="pr-4">
+          <h2 class="font-extrabold text-xl mb-1">Cookies</h2>
+          <p class="text-sm mb-1">₱ 25 - 35</p>
+          <p class="text-xs text-[#BDB6A9] leading-snug max-w-[180px]">A Nice Variety of Cookies</p>
+        </div>
+        <img src="COOKIES.jpg" alt="Chicken Leg Quarter"
+          class="w-[100px] h-[100px] rounded-lg object-cover" />
+     
+      </div>
+    </div>
+   </div>
+  </div>
+</body>
+</html>
